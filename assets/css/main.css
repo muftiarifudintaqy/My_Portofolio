@@ -50,8 +50,9 @@
 }
 
 /* Smooth scroll */
-:root {
+:root{
   scroll-behavior: smooth;
+
 }
 
 /*--------------------------------------------------------------
@@ -62,7 +63,12 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
-
+body::before{
+  background-color: black;
+  animation: 2.5s ease forwards;
+  animation-delay: 2s;
+  z-index: 5;
+}
 a {
   color: var(--accent-color);
   text-decoration: none;
