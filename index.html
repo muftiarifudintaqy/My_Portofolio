@@ -854,72 +854,7 @@
 
   <script src="assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-  <script>
-   const sr = ScrollReveal({
-    origin: "top",
-    distance: "80px",
-    duration: 2000,
-    reset: true,
-  });
-   
-  sr.reveal(".col-md-6", {delay: 100});
-  sr.reveal(".about-me", {delay: 200});
-  sr.reveal(".resume section", {delay: 200});
-  sr.reveal(".container section-title", {delay: 200});
-  sr.reveal(".skills-content skills-animation", {delay: 400});
-  sr.reveal(".row", {delay: 400});
-  sr.reveal(".resume-title", {delay:320});
-  sr.reveal(".progress-bar",{progress: 400});
-  sr.reveal(".resume-item", {interval: 200});
-  sr.reveal(".service-item",     {progress : 400});
-  const srLeft = ScrollReveal({
-    origin: "left",
-    distance: "80px",
-    duration: 2000,
-    reset: true,
-
-  })
-  srLeft.reveal(".about-me",     {delay: 100});
-  srLeft.reveal(".about-me",     {delay: 100});
-
-
-  const srRight = scrollReveal({
-    origin: "Right",
-    distance: "80px",
-    duration: 2000,
-    reset: true,
-  })
-  srRight.reveal(".i",     {delay: 100});
-  srRight.reveal(".img-fluid",     {delay: 100});
-  const sections = document.querySelectorAll(".section[id]");
-
-  function scrollActive() {
-    const scrollY = window.scrollY;
-
-    sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight,
-
-        sectionTop = current.offsetTop -50,
-        sectionId = current.getAttribute("id");
-
-        if( scrollY > sectionTop && scrollY <= sectionHeight){
-            document
-            .querySelector(".nav-menu a[href*=" + sectionId  + "]")
-            .classList.add("active-link");
-        } else {
-            document
-            .querySelector(".nav-menu a[href*=" + sectionId  + "]")
-            .classList.remove("active-link");
-        }
-        
-        });
-    
-  }
-
-window.addEventListener("scroll", scrollActive);
-
-
-  </script>
+ 
 
 </body>
 
